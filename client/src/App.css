@@ -1,0 +1,284 @@
+.App {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-wrapper,
+.submit-wrapper,
+.Header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    color: rgba(0, 0, 0, 0.877);
+    justify-content: flex-start;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.589);
+    padding-left: 10px;
+}
+
+.main-wrapper {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.Header {
+    padding: unset;
+    width: 50%;
+}
+
+.Header span {
+    font-weight: 600;
+    font-size: large;
+    margin: 5px auto;
+    width: unset;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.Header div {
+    background-color: #3a53a5;
+    width: 100%;
+    height: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0px auto;
+}
+
+
+input,
+textarea,
+select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.247);
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid purple;
+}
+
+span,
+input,
+span,
+textarea,
+select {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.submit-wrapper {
+    flex-direction: row-reverse;
+    background-color: unset;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.submit-wrapper.bottom {
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-wrapper.bottom span {
+    width: unset;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.521);
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    background-color: #55ba42;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    text-transform: capitalize;
+}
+
+button:hover,
+button:active {
+    background-color: #54ba42a2;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-wrapper button {
+    margin: 10px;
+}
+
+.checkbox-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2px auto;
+}
+
+.input-wrapper .checkbox-wrapper input {
+    margin: 0px 5px 0px 0px;
+    width: unset;
+}
+
+.input-wrapper.done {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+
+.input-wrapper.done i {
+    font-size: 40px;
+    color: #55ba42;
+}
+
+.admin {
+    width: 100%;
+    margin: 0px auto;
+    overflow-x: hidden;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    height: 60vh;
+}
+
+.admin-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: row;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    align-items: center;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: bold
+}
+
+.admin-header>span {
+    font-size: x-large;
+}
+
+.admin-header div {
+    width: 30%;
+}
+
+.tabcontrol {
+    width: 50%;
+    padding: 5px;
+    text-align: left;
+    align-items: center;
+}
+
+.tabcontrol input {
+    width: 50%;
+    padding: 5px;
+    height: 25px;
+    margin: 5px;
+}
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: #80808025;
+}
+
+td,
+th {
+    padding: 2px;
+    text-align:center;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    width: 9.09%
+}
+
+td {
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+th {
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.admin-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #3a53a5;
+    padding: 10px;
+    color: white;
+}
+
+.control-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+
+    .Header,
+    .submit-wrapper.bottom {
+        width: 90%;
+    }
+
+    .input-wrapper.done {
+        width: 90%;
+    }
+
+    .admin {
+        width: 100%;
+    }
+
+    .admin-header {
+        flex-direction: column;
+    }
+
+    .admin-header div,
+    .admin-header span {
+        width: 100%;
+    }
+
+    .main-wrapper {
+        width: 90%;
+    }
+}
